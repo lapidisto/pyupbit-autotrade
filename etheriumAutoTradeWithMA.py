@@ -56,7 +56,7 @@ while True:
             if target_price < current_price and ma15 < current_price:
                 krw = get_balance("KRW")
                 if krw > 5000:
-                    upbit.buy_market_order("KRW-ETH", krw*0.4995)
+                    upbit.buy_market_order("KRW-ETH", krw*0.9995)
         else:
             eth = get_balance("ETH")
             if eth > 0.00008:
