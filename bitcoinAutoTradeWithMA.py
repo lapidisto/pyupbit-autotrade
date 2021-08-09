@@ -56,12 +56,7 @@ while True:
             if target_price < current_price and ma5 < current_price:
                 krw = get_balance("KRW")
                 if krw > 5000:
-                    upbit.buy_market_order("KRW-BTC", krw*0.4995)
-        else:
-            btc = get_balance("BTC")
-            if btc > 0.0001:
-                upbit.sell_market_order("KRW-BTC", btc*0.9995)
-        time.sleep(1)
+                    upbit.buy_market_order("KRW-BTC", krw*0.9995)
     except Exception as e:
         print(e)
         time.sleep(1)
